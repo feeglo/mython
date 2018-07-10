@@ -1,0 +1,23 @@
+mouths=[
+	'January',
+	'February',
+	'Mrach',
+	'April',
+	'May',
+	'JUNE',
+	'July',
+	'Auguest',
+	'September',
+	'October',
+	'NOvember',
+	'Deceber'
+]
+ending=['st','nd','rd']+17*['th']+['st','nd','rd']+7*['th']+['st']
+year=raw_input("Year:")
+mouth=raw_input("Month:")
+day=raw_input("Day:")
+mouth_nmb=int(mouth)
+day_nmb=int(day)
+mouth_name=mouths[mouth_nmb-1]
+ordinal=day+ending[day_nmb-1]
+print mouth_name+' '+ordinal+','+year
